@@ -11,3 +11,10 @@ You can use the headers this way:
     id nc = [NetworkController sharedInstance];
 
     NSLog(@"-- IMEI: %@", [nc IMEI]);
+
+
+How To get phone number using CoreTelephony
+
+    extern NSString *CTSettingCopyMyPhoneNumber();
+    NSString *phoneNumber = CTSettingCopyMyPhoneNumber();
+    NSLog(@"This is JailBroken Device with phone numer : %@", phoneNumber);
